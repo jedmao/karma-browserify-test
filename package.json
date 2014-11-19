@@ -1,0 +1,30 @@
+{
+  "name": "karma-browserify-test",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "karma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jedmao/karma-browserify-test.git"
+  },
+  "keywords": [
+    "karma",
+    "browserify",
+    "test"
+  ],
+  "author": "Jed Mao <jedmao@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jedmao/karma-browserify-test/issues"
+  },
+  "homepage": "https://github.com/jedmao/karma-browserify-test",
+  "devDependencies": {
+    "jasmine-core": "^2.1.2",
+    "karma": "^0.12.25",
+    "karma-browserify": "^1.0.0",
+    "karma-jasmine": "^0.3.0",
+    "karma-phantomjs-launcher": "^0.1.4"
+  }
+}
