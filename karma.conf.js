@@ -15,9 +15,7 @@ module.exports = function(config) {
 
 		// list of files / patterns to load in the browser
 		files: [
-			'lib/api.js',
-			'lib/bar.js',
-			'test/*.spec.js'
+			'lib/**/*.spec.js'
 		],
 
 
@@ -29,16 +27,13 @@ module.exports = function(config) {
 		// preprocess matching files before serving them to the browser
 		// available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
 		preprocessors: {
-			'lib/api.js': ['browserify'],
-			'test/*.spec.js': ['browserify']
+			'lib/**/*.spec.js': ['browserify']
 		},
 
 
 		browserify: {
-			prebundle: function(bundle) {
-				bundle.external('api');
-				//bundle.require('./lib/api.js', { expose: 'api' });
-			}
+			debug: true,
+			transform: ['es6ify']
 		},
 
 
@@ -67,7 +62,7 @@ module.exports = function(config) {
 
 		// start these browsers
 		// available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-		browsers: ['PhantomJS'],
+		browsers: ['Chrome'],
 
 
 		// Continuous Integration mode

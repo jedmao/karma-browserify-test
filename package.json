@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "karma"
+    "test": "karma start --single-run"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,13 @@
   },
   "homepage": "https://github.com/jedmao/karma-browserify-test",
   "devDependencies": {
+    "es6ify": "^1.5.1",
     "jasmine-core": "^2.1.2",
     "karma": "^0.12.25",
     "karma-browserify": "^1.0.0",
+    "karma-chrome-launcher": "^0.1.5",
     "karma-jasmine": "^0.3.0",
-    "karma-phantomjs-launcher": "^0.1.4"
+    "karma-phantomjs-launcher": "^0.1.4",
+    "react": "^0.12.1"
   }
 }
